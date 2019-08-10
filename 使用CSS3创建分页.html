@@ -1,0 +1,52 @@
+<!--
+ * @Autor: ErioY
+ * @Date: 2019-08-10 22:46:47
+ * @Email: 1973545559@qq.com
+ * @Github: https://github.com/ErioY
+ * @LastEditors: ErioY
+ * @LastEditTime: 2019-08-10 23:22:10
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分页效果</title>
+    <style>
+    ul{
+        display: inline-block;
+        padding: 0;
+        margin:0;
+        list-style: none;
+    }
+    li{
+        float: left;
+        font-size: 20px;
+    }
+    li a{
+        display: block;
+        background-color: pink;
+        color: black;
+        padding: 8px 16px;
+        margin-right: 5px;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+    /* 鼠标悬停样式：通过伪元素hover来设置 */
+    li a:hover:not(.page){
+        background-color: gray;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <!-- 简单的分页效果 -->
+    <ul class="clearfix">
+        <li><a href="#">&lt;</a></li>
+        <li><a href="#" class="page">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">&gt;</a></li>
+    </ul>
+</body>
+</html>
